@@ -1,5 +1,47 @@
 return {
   -- customize alpha options
+  { "xiyaowong/nvim-transparent",
+  event = "BufRead",
+  config = function()
+      require("transparent").setup({enable = true})
+  end,
+},
+{
+  "loctvl842/monokai-pro.nvim",
+      config = function()
+      require("monokai-pro").setup({
+          transparent_background = true,
+          filter = "spectrum",
+      })
+  end
+},
+{ "luisiacc/the-matrix.nvim", lazy = false },
+{ "srcery-colors/srcery-vim" },
+{ "relastle/bluewery.vim", lazy = false },
+{ "Everblush/nvim", lazy = false },
+{ "lmburns/kimbox" },
+{ "tanvirtin/monokai.nvim", lazy = false },
+{ "bluz71/vim-nightfly-colors" },
+{ "nyoom-engineering/nyoom.nvim" },
+{ "ramojus/mellifluous.nvim" },
+{ "nyoom-engineering/oxocarbon.nvim" },
+{ "sainnhe/sonokai" },
+{ "i3d/vim-jimbothemes", lazy = false },
+{ "styled-components/vim-styled-components" },
+{ "folke/tokyonight.nvim", lazy = false },
+{ "Domeee/mosel.nvim", lazy = false  },
+{ "Microsoft/typescript-styled-plugin", lazy = false },
+{ 'frenzyexists/aquarium-vim' },
+{ "ChristianChiarulli/nvcode-color-schemes.vim", lazy = false },
+{
+"Pocco81/Catppuccino.nvim",
+    config = function()
+      require("catppuccin").setup({
+        transparent_background = true,
+        flavour = "frappe",
+    })
+end
+},
   {
     "goolord/alpha-nvim",
     opts = function(_, opts)
