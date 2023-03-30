@@ -1,11 +1,6 @@
 return {
   -- customize alpha options
-  { "xiyaowong/nvim-transparent",
-  event = "BufRead",
-  config = function()
-      require("transparent").setup({enable = true})
-  end,
-},
+  { "xiyaowong/nvim-transparent", lazy = false },
 {
   "loctvl842/monokai-pro.nvim",
       config = function()
@@ -16,7 +11,9 @@ return {
   end
 },
 { "luisiacc/the-matrix.nvim", lazy = false },
-{ "srcery-colors/srcery-vim" },
+{ "srcery-colors/srcery-vim", lazy = false },
+{ "RRethy/nvim-base16", lazy = false},
+{ "jghauser/mkdir.nvim", lazy = false },
 { "relastle/bluewery.vim", lazy = false },
 { "Everblush/nvim", lazy = false },
 { "lmburns/kimbox" },
