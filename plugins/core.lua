@@ -10,6 +10,7 @@ return {
       })
   end
 },
+{ "chrisgrieser/nvim-spider", lazy = false },
 { "luisiacc/the-matrix.nvim", lazy = false },
 { "srcery-colors/srcery-vim", lazy = false },
 { "RRethy/nvim-base16", lazy = false},
